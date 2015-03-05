@@ -1,0 +1,361 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #000;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: none;
+  border: 1px solid #333;
+}
+
+#picMain {
+  opacity: 0.0;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 50px 0;
+}
+
+.picture_holder {
+  display: block;
+}
+
+#map-canvas {
+  margin: 15px 15px 15px 15px;
+  height: 350px;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: “HelveticaNeue-Light”, “Helvetica Neue Light”, “Helvetica Neue”, Helvetica, Arial, “Lucida Grande”, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#info-table {
+  margin-bottom: 20px;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 0px;
+
+}
+
+
+/*
+ * Header
+ */
+
+ .thin-header {
+  color: rgba(0,0,0,.75);
+  border-bottom: 2px solid transparent;
+ }
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000; /* IE8 proofing */
+  color: rgba(0,0,0,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*
+ * Social on info page
+ */
+
+.social {
+  position: relative;
+  height: 50px;
+  width: 105px;
+}
+
+img.social_info {
+  width: 50px;
+  height: 50px;
+}
+
+.social-box { 
+  background-color: #C4C4C4;
+  padding: 5px 5px;
+  border-radius: 10px; 
+}
+
+#box1 {
+  border-right: 2px solid #CCCBCC;
+  background-color: #FFFDFF;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  text-align: left;
+  transition: background-color 0.5s ease;
+}
+
+#box1 img {
+  float: left;
+  margin: 0 10px;
+}
+
+#box2 {
+  background-color: #FFFDFF;
+  padding: 10px 20px;
+  text-align: left;
+  transition: background-color 0.5s ease;
+}
+
+#box2 img {
+  float: left;
+  margin: 0 10px;
+}
+
+#box3 {
+  background-color: #FFFDFF;
+  padding: 10px 20px;
+  text-align: left;
+  border-left: 2px solid #CCCBCC;
+  border-radius: 0 10px 10px 0;
+  transition: background-color 0.5s ease;
+}
+
+#box3 img {
+  float: left;
+  margin: 0 10px;
+}
+
+#box1:hover,#box2:hover,#box3:hover {
+  background-color: #CCCBCC;
+}
+
+/*
+ * Social Media Front Page
+ */
+
+#clubberia {
+  position: absolute;
+  top:0;
+  left:0;
+  background: url("../img/clubberia_logo.jpg");
+  width: 50px;
+  height: 50px;
+  background-size: 50px 100px;
+  background-position: 0 0;
+  transition: background-position 0.4s ease;
+}
+
+#clubberia:hover {
+  background-position: 0 -50px;
+}
+
+#facebook_soc {
+  position: absolute;
+  top: 0;
+  left: 55px;
+  background: url('../img/facebook-hover.png');
+  width: 48px;
+  height: 48px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-position 0.4s ease;
+}
+
+#facebook_soc:hover {
+  background-position: 0 -48px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+.side-info {
+  margin: 5px;
+  padding: 5px;
+  border: 5px solid black;
+  background-color: "#222222";
+}
+
+#directions {
+  font: 1.2em "Inconsolata";
+}
+#store-info {
+  font-size: 1.5em;
+  font-family: 'Poiret One', cursive;
+}
+
+/*
+ * Koara RSS Feed 
+ */
+ 
+
+#koarss{
+  overflow-x:hidden;
+  border: 2px solid black;
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+#koarss .rssBody ul li {
+  list-style: none;
+  text-align: left;
+  text-indent: none;
+}
+
+#koarss .rssHeader a {
+  font-style: serif;
+  font-size: 1.3em;
+  color: #555555;
+  font-weight: bold;
+}
+
+#koarss .rssRow a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+#koarss .rssRow a:hover {
+  background-color: #c9c9c9;
+}
