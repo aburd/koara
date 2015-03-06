@@ -78,25 +78,5 @@
 	<script src="http://code.jquery.com/jquery-1.8.0.min.js" type="text/javascript"></script>
 	</script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-  <script>
-
-function initialize() {
-  var myLatlng = new google.maps.LatLng(35.664330, 139.700267);
-  var myCenter = new google.maps.LatLng(35.661689, 139.700525);
-  var mapOptions = {
-    zoom: 15,
-    center: myCenter
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-  </script>
+  <script src="../js/koaraMap.js" type="text/javascript"></script>
 </html>
